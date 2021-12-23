@@ -1,28 +1,55 @@
 
 
-public class Endereco
-{
-    // variáveis de instância - substitua o exemplo abaixo pelo seu próprio
-    private int x;
-
-    /**
-     * Construtor para objetos da classe Endereco
-     */
-    public Endereco()
-    {
-        // inicializa variáveis de instância
-        x = 0;
+public class Endereco{
+    private int idleitor;
+    private String tipoend;
+    private String endereco;
+    private int numero;
+    private String bairro;
+    private String cidade;
+    private String estado;
+    
+    public void setid(int id){
+    this.idleitor = id;
     }
-
-    /**
-     * Um exemplo de um método - substitua este comentário pelo seu próprio
-     * 
-     * @param  y   um exemplo de um parâmetro de método
-     * @return     a soma de x e y 
-     */
-    public int sampleMethod(int y)
-    {
-        // escreva seu código aqui
-        return x + y;
+    public void setnome(String n){
+    this.tipoend = n;
     }
+    public void setendereco(String n){
+    this.endereco = n;
+    }
+    public void setnumero(int n){
+    this.numero = n;
+    }
+    public void setbairro(String n){
+    this.bairro = n;
+    }
+    public void setcidade(String n){
+    this.cidade = n;
+    }
+    public void setestado(String n){
+    this.estado = n;
+    }
+    public int getid(){
+    return this.idleitor;
+    }
+    public String gettipoend(){
+    return this.tipoend;
+    }
+    public String getendereco(){
+    return this.endereco;
+    }
+    public int getnumero(){
+    return this.numero;
+    }
+    public String getbairro(){
+    return this.bairro;
+    }
+    public String getcidade(){
+    return this.cidade;
+    }
+    public String getestado(){
+    return this.estado;
+    }
+    
 }

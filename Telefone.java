@@ -1,33 +1,21 @@
 
-/**
- * Escreva uma descrição da classe Telefone aqui.
- * 
- * @author (seu nome) 
- * @version (um número da versão ou uma data)
- */
-public class Telefone
-{
-    // variáveis de instância - substitua o exemplo abaixo pelo seu próprio
-    private int x;
-
-    /**
-     * Construtor para objetos da classe Telefone
-     */
-    public Telefone()
-    {
-        // inicializa variáveis de instância
-        x = 0;
+public class Telefone{
+    private int idleitor;
+    private int numero;
+    public void Telefone(int id,int numero){
+        this.idleitor = id;
+        this.numero = numero;
     }
-
-    /**
-     * Um exemplo de um método - substitua este comentário pelo seu próprio
-     * 
-     * @param  y   um exemplo de um parâmetro de método
-     * @return     a soma de x e y 
-     */
-    public int sampleMethod(int y)
-    {
-        // escreva seu código aqui
-        return x + y;
+    public void setid(int id){
+        this.idleitor = id;
+    }
+    public void setnumero(int numero){
+        this.numero = numero;
+    }
+    public int getid(){
+        return this.idleitor;
+    }
+    public int getnumero(){
+        return this.numero;
     }
 }
