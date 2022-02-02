@@ -1,6 +1,7 @@
+import java.sql.*;
 
-
-public class Endereco{
+public class Endereco extends Conexaobd{
+    private int idendereco;
     private int idleitor;
     private String tipoend;
     private String endereco;
@@ -8,48 +9,60 @@ public class Endereco{
     private String bairro;
     private String cidade;
     private String estado;
+    public void Endereco (int id, String te, String e, int n, String b, String c,String es){
+        this.idleitor = id;
+        this.tipoend = te;
+        this.endereco = e;
+        this.numero = n;
+        this.bairro = b;
+        this.cidade = c;
+        this.estado = es;
+    }
     
     public void setid(int id){
-    this.idleitor = id;
+        this.idleitor = id;
     }
-    public void setnome(String n){
-    this.tipoend = n;
+    public void settipoend(String n){
+        this.tipoend = n;
     }
     public void setendereco(String n){
-    this.endereco = n;
+        this.endereco = n;
     }
     public void setnumero(int n){
-    this.numero = n;
+        this.numero = n;
     }
     public void setbairro(String n){
-    this.bairro = n;
+        this.bairro = n;
     }
     public void setcidade(String n){
-    this.cidade = n;
+        this.cidade = n;
     }
     public void setestado(String n){
-    this.estado = n;
+        this.estado = n;
     }
     public int getid(){
-    return this.idleitor;
+        return this.idleitor;
     }
     public String gettipoend(){
-    return this.tipoend;
+        return this.tipoend;
     }
     public String getendereco(){
-    return this.endereco;
+        return this.endereco;
     }
     public int getnumero(){
-    return this.numero;
+        return this.numero;
     }
     public String getbairro(){
-    return this.bairro;
+        return this.bairro;
     }
     public String getcidade(){
-    return this.cidade;
+        return this.cidade;
     }
     public String getestado(){
-    return this.estado;
+        return this.estado;
+    }
+    public int getidend(){
+        return this.idendereco;
     }
     
 }

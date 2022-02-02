@@ -1,5 +1,5 @@
-
-public class Livro{
+import java.sql.*;
+public class Livro extends Conexaobd{
     private String nome;
     private String autor;
     private int edicao ;
